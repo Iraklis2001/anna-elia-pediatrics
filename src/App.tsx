@@ -10,19 +10,20 @@ import { Contact } from "./components/Contact"
 import { Footer } from "./components/Footer"
 
 function getInitialLocale(): Locale {
-  const saved = localStorage.getItem("locale")
+  const saved = localStorage.getItem("site-locale")
   if (saved === "en" || saved === "el") return saved
-  return navigator.language.toLowerCase().startsWith("el") ? "el" : "en"
+  // Default language is Greek
+  return "el"
 }
 
 export default function App() {
   const [locale, setLocale] = useState<Locale>(() => {
-    if (typeof window === "undefined") return "en"
+    if (typeof window === "undefined") return "el"
     return getInitialLocale()
   })
 
   useEffect(() => {
-    localStorage.setItem("locale", locale)
+    localStorage.setItem("site-locale", locale)
     document.documentElement.lang = locale
   }, [locale])
 

@@ -5,7 +5,7 @@ type LanguageToggleProps = {
   onChange: (locale: Locale) => void
 }
 
-/** Pill language switcher — EN / EL */
+/** Pill language switcher — EL first, then EN */
 export function LanguageToggle({ locale, onChange }: LanguageToggleProps) {
   return (
     <div
@@ -13,7 +13,7 @@ export function LanguageToggle({ locale, onChange }: LanguageToggleProps) {
       role="group"
       aria-label="Language"
     >
-      {(["en", "el"] as const).map((code) => {
+      {(["el", "en"] as const).map((code) => {
         const active = locale === code
         return (
           <button
