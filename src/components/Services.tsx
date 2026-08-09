@@ -1,17 +1,23 @@
+import { useState } from "react"
 import type { Copy } from "../content/copy"
 
 type ServicesProps = {
   copy: Copy["services"]
 }
 
+/** Soft faded fills matched to each service icon */
 const accentMap = {
-  green: "bg-pastel-green",
-  blue: "bg-pastel-blue",
-  beige: "bg-pastel-beige",
-  yellow: "bg-pastel-yellow",
+  pink: "bg-fade-pink/70",
+  blush: "bg-fade-blush/70",
+  mint: "bg-fade-mint/70",
+  peach: "bg-fade-peach/75",
+  sky: "bg-fade-sky/70",
+  lavender: "bg-fade-lavender/70",
 } as const
 
 export function Services({ copy }: ServicesProps) {
+  const [detailsOpen, setDetailsOpen] = useState(false)
+
   return (
     <section
       id="services"
@@ -29,34 +35,64 @@ export function Services({ copy }: ServicesProps) {
           <p className="mt-3 text-base text-ink-muted sm:text-lg">{copy.subtitle}</p>
         </div>
 
-        {/* Responsive service grid — 1 / 2 / 3 columns */}
-        <ul className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {copy.items.map((item) => (
-            <li key={item.title}>
-              <article
-                className={[
-                  "group flex h-full flex-col rounded-3xl border border-border-soft p-6 transition duration-300",
-                  "hover:-translate-y-1 hover:shadow-[0_18px_40px_-28px_rgba(61,58,54,0.45)]",
-                  accentMap[item.accent],
-                ].join(" ")}
-              >
-                <span
-                  className="mb-4 inline-flex h-2.5 w-10 rounded-full bg-white/70"
-                  aria-hidden
-                />
-                <h3 className="text-lg font-semibold text-ink">{item.title}</h3>
-                <p className="mt-2 flex-1 text-sm leading-relaxed text-ink-muted">
-                  {item.description}
-                </p>
-                <a
-                  href="#contact"
-                  className="mt-6 inline-flex w-fit items-center justify-center rounded-full bg-white/90 px-5 py-2.5 text-sm font-semibold text-ink shadow-sm transition group-hover:bg-white"
+        <ul className="mt-12 grid auto-rows-fr gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          {copy.items.map((item, index) => {
+            const panelId = `service-panel-${index}`
+            const buttonId = `service-button-${index}`
+
+            return (
+              <li key={item.title} className="h-full">
+                <article
+                  className={[
+                    "flex h-full min-h-[15.5rem] flex-col items-center justify-center rounded-3xl border border-border-soft/70 p-6 transition duration-300",
+                    detailsOpen
+                      ? "shadow-[0_18px_40px_-28px_rgba(61,58,54,0.35)]"
+                      : "hover:-translate-y-0.5",
+                    accentMap[item.accent],
+                  ].join(" ")}
                 >
-                  {copy.cta}
-                </a>
-              </article>
-            </li>
-          ))}
+                  <button
+                    type="button"
+                    id={buttonId}
+                    aria-expanded={detailsOpen}
+                    aria-controls={panelId}
+                    onClick={() => setDetailsOpen((open) => !open)}
+                    className="flex w-full flex-col items-center justify-center text-center focus-visible:outline-none"
+                  >
+                    <span className="inline-flex h-20 w-20 shrink-0 items-center justify-center rounded-2xl bg-white/85 shadow-sm">
+                      <img
+                        src={item.icon}
+                        alt=""
+                        className="h-16 w-16 object-contain"
+                        width={64}
+                        height={64}
+                        aria-hidden
+                      />
+                    </span>
+                    <h3 className="mt-4 min-h-[4.75rem] text-center text-lg font-semibold leading-snug text-ink">
+                      {item.title}
+                    </h3>
+                  </button>
+
+                  <div
+                    id={panelId}
+                    role="region"
+                    aria-labelledby={buttonId}
+                    className={[
+                      "w-full grid transition-[grid-template-rows] duration-300 ease-out",
+                      detailsOpen ? "grid-rows-[1fr]" : "grid-rows-[0fr]",
+                    ].join(" ")}
+                  >
+                    <div className="overflow-hidden">
+                      <p className="pt-3 text-center text-sm leading-relaxed text-ink-muted">
+                        {item.description}
+                      </p>
+                    </div>
+                  </div>
+                </article>
+              </li>
+            )
+          })}
         </ul>
       </div>
     </section>

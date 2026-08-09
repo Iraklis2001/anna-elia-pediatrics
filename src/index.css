@@ -18,6 +18,13 @@
   --color-pastel-yellow-deep: #e8d98a;
   --color-pastel-green-deep: #7a9435;
   --color-pastel-blue-deep: #7aafc9;
+  /* Soft fades matched to service icons */
+  --color-fade-pink: #f8d4d4;
+  --color-fade-blush: #f9dce0;
+  --color-fade-mint: #d4e8d8;
+  --color-fade-peach: #fde8d6;
+  --color-fade-sky: #d6eaf8;
+  --color-fade-lavender: #e8dff0;
   --color-gesy-section: #eef6f8;
   --color-gesy-card: #e3f1f5;
   --color-gesy-accent: #5eb9c9;

@@ -15,11 +15,11 @@ export const copy = {
     },
     hero: {
       eyebrow: "Specialist Pediatrician · Cyprus",
-      headline: "Gentle care for growing kids",
-      bio: "Specialist Pediatrician with comprehensive postgraduate training across tertiary paediatric services in Cyprus. Committed to compassionate, family-centred care through high-quality primary paediatric services — with a strong focus on prevention, immunisation, and developmental surveillance.",
+      headline: "Modern paediatric care, centred on every child",
+      bio: "Modern, personalised paediatric care with a focus on prevention, development and continuous monitoring of your child’s health — with scientific care, meaningful communication and a trusted relationship with every family.",
       cta: "Get in Touch",
       secondaryCta: "View Services",
-      imageAlt: "Portrait placeholder for Dr. Anna Elia",
+      imageAlt: "Portrait of Dr. Anna Elia",
     },
     services: {
       title: "Services",
@@ -27,47 +27,54 @@ export const copy = {
         "Thoughtful paediatric care designed to support children and reassure parents at every stage.",
       items: [
         {
-          title: "Primary Care Paediatrics",
+          icon: "/images/services/newborn.png",
+          title: "Attendance at Birth & Newborn Examination",
           description:
-            "Ongoing care for infants, children, and adolescents — from routine check-ups to everyday health concerns.",
-          accent: "green" as const,
+            "Presence during delivery and a complete newborn assessment during the maternity stay.",
+          accent: "pink" as const,
         },
         {
-          title: "Preventive Child Healthcare",
+          icon: "/images/services/breastfeeding.png",
+          title: "Breastfeeding Support",
           description:
-            "Proactive guidance to keep little ones healthy, with clear advice parents can trust.",
-          accent: "blue" as const,
+            "Guidance and support for mothers to start and continue breastfeeding smoothly.",
+          accent: "blush" as const,
         },
         {
-          title: "Childhood Immunisation",
+          icon: "/images/services/growth.png",
+          title: "Growth & Development Monitoring",
           description:
-            "Evidence-based vaccination counselling and scheduling tailored to your child’s needs.",
-          accent: "yellow" as const,
+            "Regular assessment of physical growth and developmental progress from infancy through adolescence.",
+          accent: "mint" as const,
         },
         {
-          title: "Growth & Development",
+          icon: "/images/services/vaccination.png",
+          title: "Vaccinations",
           description:
-            "Careful monitoring of growth and developmental milestones, with early support when it matters.",
-          accent: "yellow" as const,
+            "Monitoring vaccination coverage and providing scheduled vaccines according to the National Immunisation Programme.",
+          accent: "peach" as const,
         },
         {
-          title: "Acute Paediatric Care",
+          icon: "/images/services/diagnosis.png",
+          title: "Diagnosis & Treatment",
           description:
-            "Assessment and management of acute presentations with calm, clear communication for families.",
-          accent: "green" as const,
+            "Assessment, diagnosis and management of acute and common health issues in childhood and adolescence.",
+          accent: "sky" as const,
         },
         {
-          title: "Family-Centred Visits",
+          icon: "/images/services/counselling.png",
+          title: "Parental Counselling",
           description:
-            "Unhurried appointments where questions are welcome and decisions are made together.",
-          accent: "blue" as const,
+            "Personalised guidance on nutrition, sleep, behaviour, accident prevention and everyday child care.",
+          accent: "lavender" as const,
         },
       ],
       cta: "Learn More",
     },
     gesy: {
       title: "Health System",
-      body: "Our practice is registered with the General Healthcare System (GESY / ΓεΣΥ), so every family can access specialised paediatric care. Visit us with your GESY card and entrust us with your child’s health.",
+      body: "Our practice is registered with the General Healthcare System (GESY), ensuring access for every eligible person. We also accept appointments outside GESY.",
+      logoAlt: "Official GESY logo",
     },
     gallery: {
       title: "Our Space",
@@ -98,12 +105,12 @@ export const copy = {
       contact: "Επικοινωνία",
     },
     hero: {
-      eyebrow: "Ειδικός Παιδίατρος · Κύπρος",
-      headline: "Ήπια φροντίδα για τα παιδιά που μεγαλώνουν",
-      bio: "Ειδικός Παιδίατρος με ολοκληρωμένη μετεκπαίδευση σε τριτοβάθμιες παιδιατρικές υπηρεσίες στην Κύπρο. Αφοσιωμένη στην ευγενική, οικογενειοκεντρική φροντίδα μέσω ποιοτικών πρωτοβάθμιων παιδιατρικών υπηρεσιών — με έμφαση στην πρόληψη, τον εμβολιασμό και την παρακολούθηση της ανάπτυξης.",
+      eyebrow: "Ειδική Παιδίατρος · Κύπρος",
+      headline: "Σύγχρονη παιδιατρική φροντίδα, με επίκεντρο κάθε παιδί",
+      bio: "Σύγχρονη και εξατομικευμένη παιδιατρική φροντίδα, με έμφαση στην πρόληψη, την ανάπτυξη και τη διαχρονική παρακολούθηση της υγείας του παιδιού. Με επιστημονική συνέπεια, ουσιαστική επικοινωνία και μια σχέση εμπιστοσύνης με κάθε οικογένεια.",
       cta: "Επικοινωνήστε",
       secondaryCta: "Δείτε τις Υπηρεσίες",
-      imageAlt: "Προσωρινή φωτογραφία προφίλ για την Δρ. Άννα Ηλία",
+      imageAlt: "Φωτογραφία της Δρ. Άννας Ηλία",
     },
     services: {
       title: "Υπηρεσίες",
@@ -111,47 +118,54 @@ export const copy = {
         "Παιδιατρική φροντίδα με σεβασμό, σχεδιασμένη να στηρίζει τα παιδιά και να καθησυχάζει τους γονείς.",
       items: [
         {
-          title: "Πρωτοβάθμια Παιδιατρική",
+          icon: "/images/services/newborn.png",
+          title: "Παρουσία στον τοκετό & Εξέταση νεογνού",
           description:
-            "Συνεχής φροντίδα για βρέφη, παιδιά και εφήβους — από τους τακτικούς ελέγχους έως τα καθημερινά θέματα υγείας.",
-          accent: "green" as const,
+            "Παρουσία κατά τον τοκετό και ολοκληρωμένη εξέταση κατά την παραμονή στο Μαιευτήριο.",
+          accent: "pink" as const,
         },
         {
-          title: "Προληπτική Παιδιατρική",
+          icon: "/images/services/breastfeeding.png",
+          title: "Υποστήριξη μητρικού θηλασμού",
           description:
-            "Προληπτική καθοδήγηση για υγιή παιδιά, με σαφείς συμβουλές που μπορούν να εμπιστευτούν οι γονείς.",
-          accent: "blue" as const,
+            "Καθοδήγηση και υποστήριξη της μητέρας για την έναρξη και ομαλή συνέχιση του μητρικού θηλασμού.",
+          accent: "blush" as const,
         },
         {
-          title: "Εμβολιασμοί Παιδιών",
+          icon: "/images/services/growth.png",
+          title: "Παρακολούθηση αύξησης και ανάπτυξης",
           description:
-            "Συμβουλευτική και προγραμματισμός εμβολιασμών βάσει επιστημονικών δεδομένων, προσαρμοσμένα στις ανάγκες κάθε παιδιού.",
-          accent: "yellow" as const,
+            "Τακτική αξιολόγηση της σωματικής αύξησης και της αναπτυξιακής πορείας του παιδιού από τη βρεφική ηλικία έως την εφηβεία.",
+          accent: "mint" as const,
         },
         {
-          title: "Ανάπτυξη & Εξέλιξη",
+          icon: "/images/services/vaccination.png",
+          title: "Εμβολιασμοί",
           description:
-            "Προσεκτική παρακολούθηση της ανάπτυξης και των αναπτυξιακών οροσήμων, με έγκαιρη στήριξη όταν χρειάζεται.",
-          accent: "yellow" as const,
+            "Παρακολούθηση της εμβολιαστικής κάλυψης και διενέργεια των προβλεπόμενων εμβολιασμών σύμφωνα με το Εθνικό Πρόγραμμα Εμβολιασμών.",
+          accent: "peach" as const,
         },
         {
-          title: "Οξεία Παιδιατρική Φροντίδα",
+          icon: "/images/services/diagnosis.png",
+          title: "Διάγνωση & Αντιμετώπιση",
           description:
-            "Αξιολόγηση και διαχείριση οξέων περιστατικών με ήρεμη και σαφή επικοινωνία προς την οικογένεια.",
-          accent: "green" as const,
+            "Αξιολόγηση, διάγνωση και αντιμετώπιση οξέων και συχνών προβλημάτων υγείας της παιδικής και εφηβικής ηλικίας.",
+          accent: "sky" as const,
         },
         {
-          title: "Οικογενειοκεντρικές Επισκέψεις",
+          icon: "/images/services/counselling.png",
+          title: "Συμβουλευτική Γονέων",
           description:
-            "Επισκέψεις χωρίς βιασύνη, όπου οι ερωτήσεις είναι ευπρόσδεκτες και οι αποφάσεις λαμβάνονται μαζί.",
-          accent: "blue" as const,
+            "Εξατομικευμένη καθοδήγηση για θέματα διατροφής, ύπνου, συμπεριφοράς, πρόληψης ατυχημάτων και καθημερινής φροντίδας του παιδιού.",
+          accent: "lavender" as const,
         },
       ],
       cta: "Μάθετε περισσότερα",
     },
     gesy: {
       title: "Σύστημα Υγείας",
-      body: "Το ιατρείο μας είναι εγγεγραμμένο στο Γενικό Σύστημα Υγείας (ΓεΣΥ), εξασφαλίζοντας σε κάθε οικογένεια πρόσβαση σε εξειδικευμένη παιδιατρική φροντίδα. Επισκεφθείτε μας με την κάρτα σας και αναθέστε μας την υγεία του παιδιού σας.",
+      body: "Το ιατρείο μας είναι εγγεγραμμένο στο Γενικό Σύστημα Υγείας (ΓεΣΥ), εξασφαλίζοντας πρόσβαση σε κάθε δικαιούχο. Δεχόμαστε και ραντεβού εκτός ΓεΣΥ.",
+      logoAlt: "Επίσημο λογότυπο ΓεΣΥ",
     },
     gallery: {
       title: "Ο Χώρος μας",
