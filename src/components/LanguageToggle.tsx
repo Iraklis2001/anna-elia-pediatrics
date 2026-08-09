@@ -24,7 +24,7 @@ export function LanguageToggle({ locale, onChange }: LanguageToggleProps) {
             className={[
               "rounded-full px-3 py-1.5 text-xs font-semibold uppercase tracking-wide transition",
               active
-                ? "bg-pastel-yellow text-ink shadow-sm"
+                ? "bg-pastel-green text-ink shadow-sm"
                 : "text-ink-muted hover:text-ink",
             ].join(" ")}
           >

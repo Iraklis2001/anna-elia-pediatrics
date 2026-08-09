@@ -25,7 +25,7 @@ export function Hero({ copy }: HeroProps) {
       <div className="relative mx-auto grid max-w-6xl items-center gap-10 lg:grid-cols-2 lg:gap-14">
         {/* Text column */}
         <div className="order-2 text-left lg:order-1">
-          <p className="mb-4 inline-flex rounded-full bg-pastel-green/80 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-ink">
+          <p className="mb-4 inline-flex rounded-full bg-pastel-green px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-ink">
             {copy.eyebrow}
           </p>
           <h1
@@ -57,11 +57,11 @@ export function Hero({ copy }: HeroProps) {
         <div className="order-1 flex justify-center lg:order-2 lg:justify-end">
           <div className="relative">
             <div
-              className="absolute -inset-3 rounded-[2rem] bg-pastel-yellow/70 sm:-inset-4"
+              className="absolute -inset-3 rounded-[2rem] bg-pastel-green sm:-inset-4"
               aria-hidden
             />
-            <div className="absolute -bottom-4 -left-4 h-24 w-24 rounded-full bg-pastel-blue/80 sm:h-28 sm:w-28" aria-hidden />
-            <div className="absolute -right-2 -top-2 h-16 w-16 rounded-full bg-pastel-green/80 sm:h-20 sm:w-20" aria-hidden />
+            <div className="absolute -bottom-4 -left-4 h-24 w-24 rounded-full bg-pastel-blue/70 sm:h-28 sm:w-28" aria-hidden />
+            <div className="absolute -right-2 -top-2 h-16 w-16 rounded-full bg-pastel-green-deep/25 sm:h-20 sm:w-20" aria-hidden />
             <div className="relative overflow-hidden rounded-[1.75rem] border border-white/70 bg-white shadow-[0_20px_50px_-24px_rgba(61,58,54,0.35)]">
               <img
                 src={siteConfig.profileImage}

@@ -3,10 +3,13 @@
  * Leave placeholders as-is until you have final info.
  */
 export const siteConfig = {
-  doctorName: "Anna Elia, MD",
+  doctorName: {
+    en: "Dr. Anna Elia, MD",
+    el: "Δρ. Άννα Ηλία, MD",
+  },
   title: {
     en: "Specialist Pediatrician",
-    el: "Ειδικός Παιδίατρος",
+    el: "Ειδική Παιδίατρος",
   },
   phone: "+357 00 000 000", // TODO: replace with real number
   phoneHref: "tel:+35700000000",

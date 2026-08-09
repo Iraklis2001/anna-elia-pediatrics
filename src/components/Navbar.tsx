@@ -59,7 +59,7 @@ export function Navbar({ copy, locale, onLocaleChange }: NavbarProps) {
           </span>
           <span className="truncate">
             <span className="block text-sm font-semibold leading-tight text-ink sm:text-base">
-              Dr. {siteConfig.doctorName}
+              {siteConfig.doctorName[locale]}
             </span>
             <span className="block text-xs text-ink-muted">
               {siteConfig.title[locale]}

@@ -11,11 +11,12 @@
   --color-ink: #3d3a36;
   --color-ink-muted: #6b6560;
   --color-pastel-yellow: #f8efc8;
-  --color-pastel-green: #dcefe3;
+  /* Leaf greens sampled from hero photo foliage */
+  --color-pastel-green: #e0ebc4;
   --color-pastel-blue: #d9ebf5;
   --color-pastel-beige: #f0e4d8;
   --color-pastel-yellow-deep: #e8d98a;
-  --color-pastel-green-deep: #8fbfa3;
+  --color-pastel-green-deep: #7a9435;
   --color-pastel-blue-deep: #7aafc9;
   --color-gesy-section: #eef6f8;
   --color-gesy-card: #e3f1f5;

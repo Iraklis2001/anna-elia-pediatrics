@@ -42,7 +42,7 @@ export const copy = {
           title: "Childhood Immunisation",
           description:
             "Evidence-based vaccination counselling and scheduling tailored to your child’s needs.",
-          accent: "beige" as const,
+          accent: "yellow" as const,
         },
         {
           title: "Growth & Development",
@@ -126,7 +126,7 @@ export const copy = {
           title: "Εμβολιασμοί Παιδιών",
           description:
             "Συμβουλευτική και προγραμματισμός εμβολιασμών βάσει επιστημονικών δεδομένων, προσαρμοσμένα στις ανάγκες κάθε παιδιού.",
-          accent: "beige" as const,
+          accent: "yellow" as const,
         },
         {
           title: "Ανάπτυξη & Εξέλιξη",
