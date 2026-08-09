@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+/* ============================================================
+   Soft Pastel Organic Theme — edit colors here
+   ============================================================ */
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+
+  --color-cream: #fdfbf7;
+  --color-cream-soft: #faf7f2;
+  --color-ink: #3d3a36;
+  --color-ink-muted: #6b6560;
+  --color-pastel-yellow: #f8efc8;
+  --color-pastel-green: #dcefe3;
+  --color-pastel-blue: #d9ebf5;
+  --color-pastel-beige: #f0e4d8;
+  --color-pastel-yellow-deep: #e8d98a;
+  --color-pastel-green-deep: #8fbfa3;
+  --color-pastel-blue-deep: #7aafc9;
+  --color-gesy-section: #eef6f8;
+  --color-gesy-card: #e3f1f5;
+  --color-gesy-accent: #5eb9c9;
+  --color-border-soft: #ebe4db;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply m-0 min-h-svh bg-cream font-sans text-ink antialiased;
+  }
+
+  #root {
+    @apply min-h-svh;
+  }
+
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-pastel-blue-deep;
+  }
+}
