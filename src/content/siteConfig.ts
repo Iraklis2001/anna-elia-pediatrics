@@ -3,6 +3,13 @@
  * Leave placeholders as-is until you have final info.
  */
 export const siteConfig = {
+  /**
+   * Launch switch:
+   * - false = public visitors only see Coming Soon
+   * - true  = full website is live
+   * Preview full site anytime with: ?preview=1
+   */
+  showFullSite: false,
   doctorName: {
     en: "Dr. Anna Elia, MD",
     el: "Δρ. Άννα Ηλία, MD",

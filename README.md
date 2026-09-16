@@ -19,11 +19,22 @@ npm run dev
 
 Open the local URL shown in the terminal (usually `http://localhost:5173`).
 
+## Coming Soon / Launch
+
+Public visitors currently see a **Coming Soon** page.
+
+| Goal | How |
+|------|-----|
+| Preview the full site privately | Open `/?preview=1` |
+| Launch the full site publicly | Set `showFullSite: true` in `src/content/siteConfig.ts` |
+
+Live site: https://anna-elia-pediatrics.vercel.app
+
 ## Where to update content later
 
 | What | File |
 |------|------|
-| Phone, email, address, hours, map, photos | `src/content/siteConfig.ts` |
+| Phone, email, address, hours, map, photos, launch switch | `src/content/siteConfig.ts` |
 | English & Greek page text | `src/content/copy.ts` |
 | Colors / theme | `src/index.css` (`@theme` block) |
 
