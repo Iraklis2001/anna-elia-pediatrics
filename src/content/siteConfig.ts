@@ -20,8 +20,8 @@ export const siteConfig = {
   },
   phone: "+357 00 000 000", // TODO: replace with real number
   phoneHref: "tel:+35700000000",
-  email: "hello@example.com", // TODO: replace with real email
-  emailHref: "mailto:hello@example.com",
+  email: "info@annaelia.com.cy",
+  emailHref: "mailto:info@annaelia.com.cy",
   address: {
     en: "Clinic address coming soon — Cyprus",
     el: "Η διεύθυνση του ιατρείου θα προστεθεί σύντομα — Κύπρος",

@@ -73,12 +73,20 @@ export function ComingSoon({ locale, onLocaleChange }: ComingSoonProps) {
 
         <div className="mt-10 rounded-3xl border border-border-soft bg-white/70 px-6 py-5 shadow-sm backdrop-blur-sm">
           <p className="text-sm text-ink-muted">{t.contact}</p>
-          <a
-            href={siteConfig.phoneHref}
-            className="mt-3 inline-flex rounded-full bg-ink px-6 py-2.5 text-sm font-semibold text-cream transition hover:bg-ink/90"
-          >
-            {siteConfig.phone}
-          </a>
+          <div className="mt-3 flex flex-wrap items-center justify-center gap-3">
+            <a
+              href={siteConfig.emailHref}
+              className="inline-flex rounded-full bg-ink px-6 py-2.5 text-sm font-semibold text-cream transition hover:bg-ink/90"
+            >
+              {siteConfig.email}
+            </a>
+            <a
+              href={siteConfig.phoneHref}
+              className="inline-flex rounded-full border border-border-soft bg-white px-6 py-2.5 text-sm font-semibold text-ink transition hover:bg-cream"
+            >
+              {siteConfig.phone}
+            </a>
+          </div>
         </div>
       </main>
 
