@@ -8,7 +8,7 @@
     "build": "tsc -b && vite build",
     "lint": "oxlint",
     "preview": "vite preview",
-    "deploy:cf": "npm run build && wrangler pages deploy dist --project-name=anna-elia-pediatrics"
+    "deploy:cf": "npm run build && npx wrangler@4 deploy"
   },
   "dependencies": {
     "lucide-react": "^1.30.0",
@@ -24,7 +24,6 @@
     "oxlint": "^1.75.0",
     "tailwindcss": "^4.3.3",
     "typescript": "~6.0.2",
-    "vite": "^8.2.0",
-    "wrangler": "^4.132.0"
+    "vite": "^8.2.0"
   }
 }
