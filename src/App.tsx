@@ -3,6 +3,7 @@ import { copy } from "./content/copy"
 import { siteConfig, type Locale } from "./content/siteConfig"
 import { Navbar } from "./components/Navbar"
 import { Hero } from "./components/Hero"
+import { Bio } from "./components/Bio"
 import { Services } from "./components/Services"
 import { Gesy } from "./components/Gesy"
 import { Gallery } from "./components/Gallery"
@@ -51,6 +52,7 @@ export default function App() {
       <Navbar copy={t.nav} locale={locale} onLocaleChange={setLocale} />
       <main>
         <Hero copy={t.hero} />
+        <Bio copy={t.bio} />
         <Services copy={t.services} />
         <Gesy copy={t.gesy} />
         <Gallery copy={t.gallery} locale={locale} />

@@ -14,17 +14,28 @@ export const copy = {
       contact: "Contact",
     },
     hero: {
-      eyebrow: "Specialist Pediatrician · Cyprus",
+      eyebrow: "Pediatrician · Cyprus",
       headline: "Modern paediatric care, centred on every child",
       bio: "Modern, personalised paediatric care with a focus on prevention, development and continuous monitoring of your child’s health — with scientific care, meaningful communication and a trusted relationship with every family.",
       cta: "Get in Touch",
       secondaryCta: "View Services",
       imageAlt: "Portrait of Dr. Anna Elia",
     },
+    bio: {
+      eyebrow: "About the doctor",
+      tabLabel: "Meet the pediatrician",
+      name: "Dr. Anna Elia",
+      role: "Pediatrician",
+      badge: "Personal Paediatric Physician · GESY",
+      paragraphs: [
+        "Dr. Anna Elia is a graduate of the University of Cyprus Medical School and holds a specialty title in Paediatrics.",
+        "She completed her specialty training at Limassol General Hospital and Archbishop Makarios III Hospital in Nicosia.",
+        "During her training she worked in General Paediatrics, Neonatal and Paediatric Intensive Care, as well as specialised paediatric fields, gaining broad clinical experience in the care of newborns, infants, children and adolescents.",
+        "At her paediatric practice in Deftera she provides comprehensive primary paediatric care, with a focus on prevention, early diagnosis and continuous monitoring of children’s health and development from birth through adolescence.",
+      ],
+    },
     services: {
       title: "Services",
-      subtitle:
-        "Thoughtful paediatric care designed to support children and reassure parents at every stage.",
       items: [
         {
           icon: "/images/services/growth.png",
@@ -83,9 +94,10 @@ export const copy = {
     },
     contact: {
       title: "Contact & Location",
-      subtitle: "Reach out with a question — details can be updated anytime.",
       hoursTitle: "Operating Hours",
+      hoursNote: "By appointment",
       phoneLabel: "Phone",
+      mobileLabel: "Mobile",
       emailLabel: "Email",
       addressLabel: "Location",
       directionsLabel: "Get directions",
@@ -108,17 +120,28 @@ export const copy = {
       contact: "Επικοινωνία",
     },
     hero: {
-      eyebrow: "Ειδική Παιδίατρος · Κύπρος",
+      eyebrow: "Παιδίατρος · Κύπρος",
       headline: "Σύγχρονη παιδιατρική φροντίδα, με επίκεντρο κάθε παιδί",
       bio: "Σύγχρονη και εξατομικευμένη παιδιατρική φροντίδα, με έμφαση στην πρόληψη, την ανάπτυξη και τη διαχρονική παρακολούθηση της υγείας του παιδιού. Με επιστημονική συνέπεια, ουσιαστική επικοινωνία και μια σχέση εμπιστοσύνης με κάθε οικογένεια.",
       cta: "Επικοινωνήστε",
       secondaryCta: "Δείτε τις Υπηρεσίες",
       imageAlt: "Φωτογραφία της Δρ. Άννας Ηλία",
     },
+    bio: {
+      eyebrow: "Σχετικά με την ιατρό",
+      tabLabel: "Γνωρίστε την παιδίατρο",
+      name: "Δρ. Άννα Ηλία",
+      role: "Παιδίατρος",
+      badge: "Προσωπικός Ιατρός Παιδιών ΓεΣΥ",
+      paragraphs: [
+        "Η Δρ. Άννα Ηλία είναι απόφοιτος της Ιατρικής Σχολής του Πανεπιστημίου Κύπρου και κάτοχος τίτλου ειδικότητας στην Παιδιατρική.",
+        "Ολοκλήρωσε την ειδικότητά της στο Γενικό Νοσοκομείο Λεμεσού και στο Νοσοκομείο Αρχιεπίσκοπος Μακάριος Γ΄ στη Λευκωσία.",
+        "Κατά τη διάρκεια της εκπαίδευσής της δραστηριοποιήθηκε στη Γενική Παιδιατρική, στις Μονάδες Εντατικής Νοσηλείας Νεογνών και Παίδων, καθώς και σε επιμέρους εξειδικευμένους τομείς της Παιδιατρικής, αποκτώντας πολύπλευρη κλινική εμπειρία στη φροντίδα νεογνών, βρεφών, παιδιών και εφήβων.",
+        "Στο παιδιατρείο της στη Δευτερά παρέχει ολοκληρωμένη πρωτοβάθμια παιδιατρική φροντίδα, με έμφαση στην πρόληψη, την έγκαιρη διάγνωση και τη συνεχή παρακολούθηση της υγείας και της ανάπτυξης του παιδιού από τη γέννηση έως την εφηβεία.",
+      ],
+    },
     services: {
       title: "Υπηρεσίες",
-      subtitle:
-        "Παιδιατρική φροντίδα με σεβασμό, σχεδιασμένη να στηρίζει τα παιδιά και να καθησυχάζει τους γονείς.",
       items: [
         {
           icon: "/images/services/growth.png",
@@ -177,10 +200,10 @@ export const copy = {
     },
     contact: {
       title: "Επικοινωνία & Τοποθεσία",
-      subtitle:
-        "Επικοινωνήστε για οποιαδήποτε ερώτηση — τα στοιχεία μπορούν να ενημερωθούν αργότερα.",
       hoursTitle: "Ώρες Λειτουργίας",
-      phoneLabel: "Τηλέφωνο",
+      hoursNote: "Κατόπιν ραντεβού",
+      phoneLabel: "Σταθερό",
+      mobileLabel: "Κινητό",
       emailLabel: "Email",
       addressLabel: "Διεύθυνση",
       directionsLabel: "Οδηγίες",

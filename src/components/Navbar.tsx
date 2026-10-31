@@ -11,7 +11,7 @@ type NavbarProps = {
 }
 
 const links = [
-  { href: "#about", key: "about" as const },
+  { href: "#bio", key: "about" as const },
   { href: "#services", key: "services" as const },
   { href: "#gesy", key: "gesy" as const },
   { href: "#space", key: "space" as const },

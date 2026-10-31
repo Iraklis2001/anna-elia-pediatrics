@@ -86,6 +86,12 @@ export function ComingSoon({ locale, onLocaleChange }: ComingSoonProps) {
             >
               {siteConfig.phone}
             </a>
+            <a
+              href={siteConfig.mobileHref}
+              className="inline-flex rounded-full border border-border-soft bg-white px-6 py-2.5 text-sm font-semibold text-ink transition hover:bg-cream"
+            >
+              {siteConfig.mobile}
+            </a>
           </div>
         </div>
       </main>

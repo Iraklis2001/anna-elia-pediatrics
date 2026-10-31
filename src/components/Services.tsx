@@ -32,7 +32,6 @@ export function Services({ copy }: ServicesProps) {
           >
             {copy.title}
           </h2>
-          <p className="mt-3 text-base text-ink-muted sm:text-lg">{copy.subtitle}</p>
         </div>
 
         <ul className="mt-12 grid auto-rows-fr gap-5 sm:grid-cols-2 lg:grid-cols-3">

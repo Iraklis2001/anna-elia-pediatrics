@@ -1,14 +1,12 @@
 # Dr. Anna Elia, MD — Pediatrics Landing Page
 
-**Live site: [anna-elia-pediatrics.vercel.app](https://anna-elia-pediatrics.vercel.app)**
-
 Responsive single-page website for a specialist pediatrician practice (English / Greek).
 
 ## Stack
 
 - React + TypeScript (Vite)
 - Tailwind CSS v4
-- Plus Jakarta Sans
+- Hosted on **Cloudflare Pages**
 
 ## Quick start
 
@@ -28,7 +26,27 @@ Public visitors currently see a **Coming Soon** page.
 | Preview the full site privately | Open `/?preview=1` |
 | Launch the full site publicly | Set `showFullSite: true` in `src/content/siteConfig.ts` |
 
-Live site: https://anna-elia-pediatrics.vercel.app
+## Deploy (Cloudflare Pages)
+
+One-time login:
+
+```bash
+npx wrangler login
+```
+
+Deploy:
+
+```bash
+npm run deploy:cf
+```
+
+Or connect the GitHub repo in the Cloudflare dashboard for automatic deploys on every push:
+[Cloudflare Pages → Create project](https://dash.cloudflare.com/?to=/:account/pages)
+
+Build settings if using Git:
+- Framework preset: Vite
+- Build command: `npm run build`
+- Build output directory: `dist`
 
 ## Where to update content later
 

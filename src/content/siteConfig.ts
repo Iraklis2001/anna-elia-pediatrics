@@ -15,11 +15,13 @@ export const siteConfig = {
     el: "Δρ. Άννα Ηλία, MD",
   },
   title: {
-    en: "Specialist Pediatrician",
-    el: "Ειδική Παιδίατρος",
+    en: "Pediatrician",
+    el: "Παιδίατρος",
   },
   phone: "+357 22 250 447",
   phoneHref: "tel:+35722250447",
+  mobile: "+357 94 002 007",
+  mobileHref: "tel:+35794002007",
   email: "info@annaelia.com.cy",
   emailHref: "mailto:info@annaelia.com.cy",
   address: {
@@ -34,14 +36,22 @@ export const siteConfig = {
     "https://waze.com/ul?ll=35.0860448%2C33.2847233&navigate=yes",
   hours: {
     en: [
-      { days: "Monday – Friday", time: "09:00 – 17:00" },
-      { days: "Saturday", time: "By appointment" },
+      { days: "Monday", time: "09:00 – 13:00 · 15:00 – 18:00" },
+      { days: "Tuesday", time: "09:00 – 13:00 · 15:00 – 18:00" },
+      { days: "Wednesday", time: "09:00 – 13:00 · 15:00 – 18:00" },
+      { days: "Thursday", time: "09:00 – 13:00" },
+      { days: "Friday", time: "09:00 – 13:00 · 15:00 – 18:00" },
+      { days: "Saturday", time: "Closed" },
       { days: "Sunday", time: "Closed" },
     ],
     el: [
-      { days: "Δευτέρα – Παρασκευή", time: "09:00 – 17:00" },
-      { days: "Σάββατο", time: "Με ραντεβού" },
-      { days: "Κυριακή", time: "Κλειστά" },
+      { days: "Δευτέρα", time: "09:00 – 13:00 · 15:00 – 18:00" },
+      { days: "Τρίτη", time: "09:00 – 13:00 · 15:00 – 18:00" },
+      { days: "Τετάρτη", time: "09:00 – 13:00 · 15:00 – 18:00" },
+      { days: "Πέμπτη", time: "09:00 – 13:00" },
+      { days: "Παρασκευή", time: "09:00 – 13:00 · 15:00 – 18:00" },
+      { days: "Σάββατο", time: "Κλειστό" },
+      { days: "Κυριακή", time: "Κλειστό" },
     ],
   },
   social: {

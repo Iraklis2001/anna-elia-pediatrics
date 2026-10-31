@@ -23,7 +23,6 @@ export function Contact({ copy, locale }: ContactProps) {
           >
             {copy.title}
           </h2>
-          <p className="mt-3 text-base text-ink-muted sm:text-lg">{copy.subtitle}</p>
         </div>
 
         <div className="mt-12 grid gap-8 lg:grid-cols-2">
@@ -35,24 +34,27 @@ export function Contact({ copy, locale }: ContactProps) {
               </span>
               {copy.hoursTitle}
             </h3>
+            <p className="mt-2 text-sm font-medium text-pastel-green-deep">
+              {copy.hoursNote}
+            </p>
             <ul className="mt-4 space-y-3">
               {siteConfig.hours[locale].map((row) => (
                 <li
                   key={row.days}
-                  className="flex items-center justify-between gap-4 rounded-2xl bg-cream px-4 py-3 text-sm"
+                  className="flex flex-col gap-0.5 rounded-2xl bg-cream px-4 py-3 text-sm sm:flex-row sm:items-center sm:justify-between sm:gap-4"
                 >
                   <span className="font-medium text-ink">{row.days}</span>
-                  <span className="text-ink-muted">{row.time}</span>
+                  <span className="text-ink-muted sm:text-right">{row.time}</span>
                 </li>
               ))}
             </ul>
 
-            <dl className="mt-8 space-y-4">
+            <div className="mt-8 space-y-4 text-left">
               <div>
-                <dt className="text-xs font-semibold uppercase tracking-wide text-ink-muted">
-                  {copy.phoneLabel}
-                </dt>
-                <dd className="mt-2">
+                <p className="text-xs font-semibold uppercase tracking-wide text-ink-muted">
+                  {copy.phoneLabel} · {copy.mobileLabel}
+                </p>
+                <div className="mt-2 flex flex-wrap gap-2">
                   <a
                     href={siteConfig.phoneHref}
                     className="inline-flex items-center gap-2 rounded-full bg-pastel-green/70 px-4 py-2 text-sm font-semibold text-ink transition hover:bg-pastel-green"
@@ -60,14 +62,21 @@ export function Contact({ copy, locale }: ContactProps) {
                     <Phone size={16} aria-hidden />
                     {siteConfig.phone}
                   </a>
-                </dd>
+                  <a
+                    href={siteConfig.mobileHref}
+                    className="inline-flex items-center gap-2 rounded-full bg-pastel-blue/70 px-4 py-2 text-sm font-semibold text-ink transition hover:bg-pastel-blue"
+                  >
+                    <Phone size={16} aria-hidden />
+                    {siteConfig.mobile}
+                  </a>
+                </div>
               </div>
 
               <div>
-                <dt className="text-xs font-semibold uppercase tracking-wide text-ink-muted">
+                <p className="text-xs font-semibold uppercase tracking-wide text-ink-muted">
                   {copy.emailLabel}
-                </dt>
-                <dd className="mt-2">
+                </p>
+                <div className="mt-2">
                   <a
                     href={siteConfig.emailHref}
                     className="inline-flex items-center gap-2 rounded-full bg-pastel-blue/70 px-4 py-2 text-sm font-semibold text-ink transition hover:bg-pastel-blue"
@@ -75,49 +84,50 @@ export function Contact({ copy, locale }: ContactProps) {
                     <Mail size={16} aria-hidden />
                     {siteConfig.email}
                   </a>
-                </dd>
+                </div>
               </div>
 
               <div>
-                <dt className="text-xs font-semibold uppercase tracking-wide text-ink-muted">
+                <p className="text-xs font-semibold uppercase tracking-wide text-ink-muted">
                   {copy.addressLabel}
-                </dt>
-                <dd className="mt-2">
-                  <p className="flex items-start gap-2 text-sm text-ink">
-                    <span className="mt-0.5 inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-pastel-beige">
-                      <MapPin size={15} aria-hidden />
-                    </span>
+                </p>
+                <div className="mt-2">
+                  <p className="flex items-start gap-2 rounded-2xl bg-pastel-beige/80 px-4 py-2 text-sm font-semibold leading-snug text-ink">
+                    <MapPin size={16} className="mt-0.5 shrink-0" aria-hidden />
                     {siteConfig.address[locale]}
                   </p>
-                  <p className="mt-3 text-xs font-semibold uppercase tracking-wide text-ink-muted">
-                    {copy.directionsLabel}
-                  </p>
-                  <div className="mt-2 flex flex-wrap gap-2">
-                    <a
-                      href={siteConfig.mapsGoogleUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center justify-center rounded-full bg-pastel-blue/80 px-4 py-2 text-sm font-semibold text-ink transition hover:bg-pastel-blue"
-                    >
-                      {copy.openInGoogleMaps}
-                    </a>
-                    <a
-                      href={siteConfig.mapsWazeUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center justify-center rounded-full bg-pastel-green/80 px-4 py-2 text-sm font-semibold text-ink transition hover:bg-pastel-green"
-                    >
-                      {copy.openInWaze}
-                    </a>
-                  </div>
-                </dd>
+                </div>
               </div>
 
               <div>
-                <dt className="text-xs font-semibold uppercase tracking-wide text-ink-muted">
+                <p className="text-xs font-semibold uppercase tracking-wide text-ink-muted">
+                  {copy.directionsLabel}
+                </p>
+                <div className="mt-2 flex flex-wrap gap-2">
+                  <a
+                    href={siteConfig.mapsGoogleUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center rounded-full bg-pastel-blue/80 px-4 py-2 text-sm font-semibold text-ink transition hover:bg-pastel-blue"
+                  >
+                    {copy.openInGoogleMaps}
+                  </a>
+                  <a
+                    href={siteConfig.mapsWazeUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center rounded-full bg-pastel-green/80 px-4 py-2 text-sm font-semibold text-ink transition hover:bg-pastel-green"
+                  >
+                    {copy.openInWaze}
+                  </a>
+                </div>
+              </div>
+
+              <div>
+                <p className="text-xs font-semibold uppercase tracking-wide text-ink-muted">
                   {copy.socialLabel}
-                </dt>
-                <dd className="mt-2 flex flex-wrap gap-2">
+                </p>
+                <div className="mt-2 flex flex-wrap gap-2">
                   <SocialLink href={siteConfig.social.facebook} label="Facebook">
                     <FacebookIcon />
                   </SocialLink>
@@ -127,9 +137,9 @@ export function Contact({ copy, locale }: ContactProps) {
                   <SocialLink href={siteConfig.social.linkedin} label="LinkedIn">
                     <LinkedInIcon />
                   </SocialLink>
-                </dd>
+                </div>
               </div>
-            </dl>
+            </div>
           </div>
 
           {/* Column 2 — map + navigation apps */}
