@@ -82,11 +82,34 @@ export function Contact({ copy, locale }: ContactProps) {
                 <dt className="text-xs font-semibold uppercase tracking-wide text-ink-muted">
                   {copy.addressLabel}
                 </dt>
-                <dd className="mt-2 flex items-start gap-2 text-sm text-ink">
-                  <span className="mt-0.5 inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-pastel-beige">
-                    <MapPin size={15} aria-hidden />
-                  </span>
-                  {siteConfig.address[locale]}
+                <dd className="mt-2">
+                  <p className="flex items-start gap-2 text-sm text-ink">
+                    <span className="mt-0.5 inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-pastel-beige">
+                      <MapPin size={15} aria-hidden />
+                    </span>
+                    {siteConfig.address[locale]}
+                  </p>
+                  <p className="mt-3 text-xs font-semibold uppercase tracking-wide text-ink-muted">
+                    {copy.directionsLabel}
+                  </p>
+                  <div className="mt-2 flex flex-wrap gap-2">
+                    <a
+                      href={siteConfig.mapsGoogleUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center justify-center rounded-full bg-pastel-blue/80 px-4 py-2 text-sm font-semibold text-ink transition hover:bg-pastel-blue"
+                    >
+                      {copy.openInGoogleMaps}
+                    </a>
+                    <a
+                      href={siteConfig.mapsWazeUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center justify-center rounded-full bg-pastel-green/80 px-4 py-2 text-sm font-semibold text-ink transition hover:bg-pastel-green"
+                    >
+                      {copy.openInWaze}
+                    </a>
+                  </div>
                 </dd>
               </div>
 
@@ -109,16 +132,37 @@ export function Contact({ copy, locale }: ContactProps) {
             </dl>
           </div>
 
-          {/* Column 2 — map */}
-          <div className="overflow-hidden rounded-3xl border border-border-soft bg-pastel-blue/40 min-h-[20rem] lg:min-h-full">
+          {/* Column 2 — map + navigation apps */}
+          <div className="flex min-h-[20rem] flex-col overflow-hidden rounded-3xl border border-border-soft bg-pastel-blue/40 lg:min-h-full">
             <iframe
               title={copy.mapTitle}
               src={siteConfig.mapsEmbedUrl}
-              className="h-full min-h-[20rem] w-full border-0 lg:min-h-full"
+              className="min-h-[16rem] w-full flex-1 border-0"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
               allowFullScreen
             />
+            <div className="flex flex-wrap items-center justify-center gap-2 border-t border-border-soft bg-white/80 px-4 py-3">
+              <span className="w-full text-center text-xs font-semibold uppercase tracking-wide text-ink-muted sm:w-auto sm:mr-1">
+                {copy.directionsLabel}
+              </span>
+              <a
+                href={siteConfig.mapsGoogleUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center rounded-full bg-pastel-blue px-5 py-2.5 text-sm font-semibold text-ink transition hover:bg-pastel-blue-deep/30"
+              >
+                {copy.openInGoogleMaps}
+              </a>
+              <a
+                href={siteConfig.mapsWazeUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center rounded-full bg-pastel-green px-5 py-2.5 text-sm font-semibold text-ink transition hover:bg-pastel-green-deep/25"
+              >
+                {copy.openInWaze}
+              </a>
+            </div>
           </div>
         </div>
       </div>

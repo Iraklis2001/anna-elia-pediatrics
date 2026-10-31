@@ -18,17 +18,20 @@ export const siteConfig = {
     en: "Specialist Pediatrician",
     el: "Ειδική Παιδίατρος",
   },
-  phone: "+357 00 000 000", // TODO: replace with real number
-  phoneHref: "tel:+35700000000",
+  phone: "+357 22 250 447",
+  phoneHref: "tel:+35722250447",
   email: "info@annaelia.com.cy",
   emailHref: "mailto:info@annaelia.com.cy",
   address: {
-    en: "Clinic address coming soon — Cyprus",
-    el: "Η διεύθυνση του ιατρείου θα προστεθεί σύντομα — Κύπρος",
+    en: "16 Kosta Misiaouli, Kato Deftera, Nicosia 2450, Cyprus",
+    el: "Κώστα Μισιαούλη 16, Κάτω Δευτερά, Λευκωσία 2450, Κύπρος",
   },
-  /** Replace with your Google Maps embed URL when ready */
+  /** Google Maps: https://maps.app.goo.gl/TfjtrvXFjQg461sv9 */
   mapsEmbedUrl:
-    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3261.0!2d33.0!3d35.0!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzXCsDAwJzAwLjAiTiAzM8KwMDAnMDAuMCJF!5e0!3m2!1sen!2s!4v1700000000000!5m2!1sen!2s",
+    "https://www.google.com/maps?q=35.0860448,33.2847233&z=17&hl=el&output=embed",
+  mapsGoogleUrl: "https://maps.app.goo.gl/TfjtrvXFjQg461sv9",
+  mapsWazeUrl:
+    "https://waze.com/ul?ll=35.0860448%2C33.2847233&navigate=yes",
   hours: {
     en: [
       { days: "Monday – Friday", time: "09:00 – 17:00" },
