@@ -1,7 +1,0 @@
-# Cloudflare Workers static assets (annaelia.com.cy)
-name = "anna-elia-pediatrics"
-compatibility_date = "2025-10-31"
-
-[assets]
-directory = "./dist"
-not_found_handling = "single-page-application"
