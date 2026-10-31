@@ -27,20 +27,6 @@ export const copy = {
         "Thoughtful paediatric care designed to support children and reassure parents at every stage.",
       items: [
         {
-          icon: "/images/services/newborn.png",
-          title: "Attendance at Birth & Newborn Examination",
-          description:
-            "Presence during delivery and a complete newborn assessment during the maternity stay.",
-          accent: "pink" as const,
-        },
-        {
-          icon: "/images/services/breastfeeding.png",
-          title: "Breastfeeding Support",
-          description:
-            "Guidance and support for mothers to start and continue breastfeeding smoothly.",
-          accent: "blush" as const,
-        },
-        {
           icon: "/images/services/growth.png",
           title: "Growth & Development Monitoring",
           description:
@@ -51,15 +37,29 @@ export const copy = {
           icon: "/images/services/vaccination.png",
           title: "Vaccinations",
           description:
-            "Monitoring vaccination coverage and providing scheduled vaccines according to the National Immunisation Programme.",
+            "Monitoring vaccination coverage, parent guidance, and vaccinations according to the National Immunisation Programme.",
           accent: "peach" as const,
         },
         {
           icon: "/images/services/diagnosis.png",
           title: "Diagnosis & Treatment",
           description:
-            "Assessment, diagnosis and management of acute and common health issues in childhood and adolescence.",
+            "Complete clinical assessment, diagnosis and personalised care for acute and chronic health issues in infants, children and adolescents.",
           accent: "sky" as const,
+        },
+        {
+          icon: "/images/services/newborn.png",
+          title: "Attendance at Birth & Newborn Examination",
+          description:
+            "Presence during delivery, initial newborn assessment, monitoring during the maternity stay, and continued paediatric care after discharge.",
+          accent: "pink" as const,
+        },
+        {
+          icon: "/images/services/breastfeeding.png",
+          title: "Breastfeeding Support",
+          description:
+            "Personalised guidance and practical support to help mothers begin, establish and continue breastfeeding successfully.",
+          accent: "blush" as const,
         },
         {
           icon: "/images/services/counselling.png",
@@ -118,22 +118,8 @@ export const copy = {
         "Παιδιατρική φροντίδα με σεβασμό, σχεδιασμένη να στηρίζει τα παιδιά και να καθησυχάζει τους γονείς.",
       items: [
         {
-          icon: "/images/services/newborn.png",
-          title: "Παρουσία στον τοκετό & Εξέταση νεογνού",
-          description:
-            "Παρουσία κατά τον τοκετό και ολοκληρωμένη εξέταση κατά την παραμονή στο Μαιευτήριο.",
-          accent: "pink" as const,
-        },
-        {
-          icon: "/images/services/breastfeeding.png",
-          title: "Υποστήριξη μητρικού θηλασμού",
-          description:
-            "Καθοδήγηση και υποστήριξη της μητέρας για την έναρξη και ομαλή συνέχιση του μητρικού θηλασμού.",
-          accent: "blush" as const,
-        },
-        {
           icon: "/images/services/growth.png",
-          title: "Παρακολούθηση αύξησης και ανάπτυξης",
+          title: "Παρακολούθηση αύξησης και ανάπτυξη",
           description:
             "Τακτική αξιολόγηση της σωματικής αύξησης και της αναπτυξιακής πορείας του παιδιού από τη βρεφική ηλικία έως την εφηβεία.",
           accent: "mint" as const,
@@ -142,15 +128,29 @@ export const copy = {
           icon: "/images/services/vaccination.png",
           title: "Εμβολιασμοί",
           description:
-            "Παρακολούθηση της εμβολιαστικής κάλυψης και διενέργεια των προβλεπόμενων εμβολιασμών σύμφωνα με το Εθνικό Πρόγραμμα Εμβολιασμών.",
+            "Παρακολούθηση της εμβολιαστικής κάλυψης του παιδιού, ενημέρωση και καθοδήγηση των γονέων και πραγματοποίηση των εμβολιασμών σύμφωνα με το Εθνικό Πρόγραμμα Εμβολιασμών.",
           accent: "peach" as const,
         },
         {
           icon: "/images/services/diagnosis.png",
           title: "Διάγνωση & Αντιμετώπιση",
           description:
-            "Αξιολόγηση, διάγνωση και αντιμετώπιση οξέων και συχνών προβλημάτων υγείας της παιδικής και εφηβικής ηλικίας.",
+            "Ολοκληρωμένη κλινική αξιολόγηση, διάγνωση και εξατομικευμένη αντιμετώπιση οξέων και χρόνιων προβλημάτων υγείας σε βρέφη, παιδιά και εφήβους.",
           accent: "sky" as const,
+        },
+        {
+          icon: "/images/services/newborn.png",
+          title: "Παρουσία στον τοκετό & Εξέταση νεογνού",
+          description:
+            "Παρουσία κατά τον τοκετό και αρχική κλινική αξιολόγηση του νεογνού, παρακολούθηση της υγείας του κατά την παραμονή στο μαιευτήριο και συνέχιση της παιδιατρικής φροντίδας μετά το εξιτήριο.",
+          accent: "pink" as const,
+        },
+        {
+          icon: "/images/services/breastfeeding.png",
+          title: "Υποστήριξη μητρικού θηλασμού",
+          description:
+            "Εξατομικευμένη καθοδήγηση και πρακτική υποστήριξη της μητέρας για την επιτυχή έναρξη, εγκατάσταση και ομαλή συνέχιση του μητρικού θηλασμού.",
+          accent: "blush" as const,
         },
         {
           icon: "/images/services/counselling.png",

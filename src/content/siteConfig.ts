@@ -9,7 +9,7 @@ export const siteConfig = {
    * - true  = full website is live
    * Preview full site anytime with: ?preview=1
    */
-  showFullSite: false,
+  showFullSite: true,
   doctorName: {
     en: "Dr. Anna Elia, MD",
     el: "Δρ. Άννα Ηλία, MD",
