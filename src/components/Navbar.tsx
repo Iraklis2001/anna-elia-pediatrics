@@ -53,12 +53,14 @@ export function Navbar({ copy, locale, onLocaleChange }: NavbarProps) {
       >
         {/* Logo / brand — update name in siteConfig */}
         <a href="#top" className="group flex min-w-0 items-center gap-2">
-          <span
-            className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-pastel-blue text-sm font-bold text-ink"
+          <img
+            src={siteConfig.profileImage}
+            alt=""
+            className="h-10 w-10 shrink-0 rounded-full object-cover object-top ring-2 ring-pastel-blue"
+            width={40}
+            height={40}
             aria-hidden
-          >
-            AE
-          </span>
+          />
           <span className="truncate">
             <span className="block text-sm font-semibold leading-tight text-ink sm:text-base">
               {siteConfig.doctorName[locale]}
