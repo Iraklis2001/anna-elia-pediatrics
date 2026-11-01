@@ -14,7 +14,9 @@ const links = [
   { href: "#bio", key: "about" as const },
   { href: "#services", key: "services" as const },
   { href: "#gesy", key: "gesy" as const },
-  { href: "#space", key: "space" as const },
+  ...(siteConfig.showGallery
+    ? [{ href: "#space", key: "space" as const }]
+    : []),
   { href: "#contact", key: "contact" as const },
 ]
 

@@ -10,6 +10,8 @@ export const siteConfig = {
    * Preview full site anytime with: ?preview=1
    */
   showFullSite: true,
+  /** Hide "Our Space" until real clinic photos are ready */
+  showGallery: false,
   doctorName: {
     en: "Dr. Anna Elia, MD",
     el: "Δρ. Άννα Ηλία, MD",
@@ -60,9 +62,7 @@ export const siteConfig = {
     instagram: "#",
     linkedin: "#",
   },
-  /** Swap this path later with /images/doctor.jpg (place file in /public/images/) */
-  profileImage:
-    "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=800&q=80",
+  profileImage: "/images/doctor.jpg",
   gallery: [
     {
       src: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=900&q=80",

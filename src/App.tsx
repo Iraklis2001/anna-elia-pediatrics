@@ -55,7 +55,9 @@ export default function App() {
         <Bio copy={t.bio} />
         <Services copy={t.services} />
         <Gesy copy={t.gesy} />
-        <Gallery copy={t.gallery} locale={locale} />
+        {siteConfig.showGallery ? (
+          <Gallery copy={t.gallery} locale={locale} />
+        ) : null}
         <Contact copy={t.contact} locale={locale} />
       </main>
       <Footer copy={t.footer} locale={locale} />
