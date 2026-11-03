@@ -128,21 +128,19 @@ export function Contact({ copy, locale }: ContactProps) {
                   {copy.socialLabel}
                 </p>
                 <div className="mt-2 flex flex-wrap gap-2">
-                  {siteConfig.social.facebook !== "#" ? (
-                    <SocialLink href={siteConfig.social.facebook} label="Facebook">
-                      <FacebookIcon />
-                    </SocialLink>
-                  ) : null}
-                  {siteConfig.social.instagram !== "#" ? (
-                    <SocialLink href={siteConfig.social.instagram} label="Instagram">
-                      <InstagramIcon />
-                    </SocialLink>
-                  ) : null}
-                  {siteConfig.social.linkedin !== "#" ? (
-                    <SocialLink href={siteConfig.social.linkedin} label="LinkedIn">
-                      <LinkedInIcon />
-                    </SocialLink>
-                  ) : null}
+                  {(
+                    [
+                      ["Facebook", siteConfig.social.facebook, <FacebookIcon key="fb" />],
+                      ["Instagram", siteConfig.social.instagram, <InstagramIcon key="ig" />],
+                      ["LinkedIn", siteConfig.social.linkedin, <LinkedInIcon key="li" />],
+                    ] as const
+                  )
+                    .filter(([, href]) => href.startsWith("http"))
+                    .map(([label, href, icon]) => (
+                      <SocialLink key={label} href={href} label={label}>
+                        {icon}
+                      </SocialLink>
+                    ))}
                 </div>
               </div>
             </div>
