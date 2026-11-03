@@ -57,10 +57,10 @@ export const siteConfig = {
     ],
   },
   social: {
-    // TODO: add real URLs when ready
+    // TODO: add Facebook URL when ready
     facebook: "#",
-    instagram: "#",
-    linkedin: "#",
+    instagram: "https://www.instagram.com/dr.annaelia",
+    linkedin: "https://www.linkedin.com/in/anna-elia-5ba342427",
   },
   profileImage: "/images/doctor.jpg",
   gallery: [

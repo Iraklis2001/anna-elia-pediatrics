@@ -128,15 +128,21 @@ export function Contact({ copy, locale }: ContactProps) {
                   {copy.socialLabel}
                 </p>
                 <div className="mt-2 flex flex-wrap gap-2">
-                  <SocialLink href={siteConfig.social.facebook} label="Facebook">
-                    <FacebookIcon />
-                  </SocialLink>
-                  <SocialLink href={siteConfig.social.instagram} label="Instagram">
-                    <InstagramIcon />
-                  </SocialLink>
-                  <SocialLink href={siteConfig.social.linkedin} label="LinkedIn">
-                    <LinkedInIcon />
-                  </SocialLink>
+                  {siteConfig.social.facebook !== "#" ? (
+                    <SocialLink href={siteConfig.social.facebook} label="Facebook">
+                      <FacebookIcon />
+                    </SocialLink>
+                  ) : null}
+                  {siteConfig.social.instagram !== "#" ? (
+                    <SocialLink href={siteConfig.social.instagram} label="Instagram">
+                      <InstagramIcon />
+                    </SocialLink>
+                  ) : null}
+                  {siteConfig.social.linkedin !== "#" ? (
+                    <SocialLink href={siteConfig.social.linkedin} label="LinkedIn">
+                      <LinkedInIcon />
+                    </SocialLink>
+                  ) : null}
                 </div>
               </div>
             </div>
@@ -193,6 +199,8 @@ function SocialLink({
     <a
       href={href}
       aria-label={label}
+      target="_blank"
+      rel="noopener noreferrer"
       className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-border-soft bg-cream text-ink transition hover:bg-pastel-beige"
     >
       {children}
