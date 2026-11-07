@@ -10,6 +10,8 @@ export const siteConfig = {
    * Preview full site anytime with: ?preview=1
    */
   showFullSite: true,
+  /** Public address. Used for the canonical link, sitemap, and search results. */
+  siteUrl: "https://annaelia.com.cy",
   /** Hide "Our Space" until real clinic photos are ready */
   showGallery: false,
   doctorName: {
@@ -30,10 +32,32 @@ export const siteConfig = {
     en: "16 Kosta Misiaouli, Kato Deftera, Nicosia 2450, Cyprus",
     el: "Κώστα Μισιαούλη 16, Κάτω Δευτερά, Λευκωσία 2450, Κύπρος",
   },
-  /** Google Maps: https://maps.app.goo.gl/TfjtrvXFjQg461sv9 */
+  postalAddress: {
+    streetAddress: {
+      en: "16 Kosta Misiaouli",
+      el: "Κώστα Μισιαούλη 16",
+    },
+    locality: {
+      en: "Kato Deftera",
+      el: "Κάτω Δευτερά",
+    },
+    region: {
+      en: "Nicosia",
+      el: "Λευκωσία",
+    },
+    postalCode: "2450",
+    country: "CY",
+  },
+  geo: {
+    latitude: 35.0860448,
+    longitude: 33.2847233,
+  },
+  /** Public name on the existing Google Business listing. */
+  mapsBusinessName: "Dr. Anna Elia - Pediatrician",
+  /** Google Business listing: https://maps.app.goo.gl/i3QxTxBvAyg1WpuSA */
   mapsEmbedUrl:
     "https://www.google.com/maps?q=35.0860448,33.2847233&z=17&hl=el&output=embed",
-  mapsGoogleUrl: "https://maps.app.goo.gl/TfjtrvXFjQg461sv9",
+  mapsGoogleUrl: "https://maps.app.goo.gl/i3QxTxBvAyg1WpuSA",
   mapsWazeUrl:
     "https://waze.com/ul?ll=35.0860448%2C33.2847233&navigate=yes",
   hours: {

@@ -147,6 +147,11 @@ export const copy = {
     footer: {
       rights: "All rights reserved.",
       tagline: "Compassionate paediatric care for families.",
+      phoneLabel: "Phone",
+      mobileLabel: "Mobile",
+      addressLabel: "Clinic",
+      notice:
+        "Information on this website does not replace a medical examination or advice.",
     },
   },
   el: {
@@ -293,6 +298,11 @@ export const copy = {
     footer: {
       rights: "Με επιφύλαξη παντός δικαιώματος.",
       tagline: "Ευγενική παιδιατρική φροντίδα για οικογένειες.",
+      phoneLabel: "Σταθερό",
+      mobileLabel: "Κινητό",
+      addressLabel: "Ιατρείο",
+      notice:
+        "Οι πληροφορίες σε αυτή την ιστοσελίδα δεν αντικαθιστούν την ιατρική εξέταση ή συμβουλή.",
     },
   },
 } as const

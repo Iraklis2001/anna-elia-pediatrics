@@ -1,0 +1,18 @@
+{
+  "name": "Δρ. Άννα Ηλία — Παιδίατρος",
+  "short_name": "Δρ. Άννα Ηλία",
+  "description": "Παιδίατρος στην Κάτω Δευτερά, Λευκωσία.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fdfbf7",
+  "theme_color": "#fdfbf7",
+  "lang": "el",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

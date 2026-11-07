@@ -10,6 +10,7 @@ import { Gallery } from "./components/Gallery"
 import { Faq } from "./components/Faq"
 import { Contact } from "./components/Contact"
 import { Footer } from "./components/Footer"
+import { Seo } from "./components/Seo"
 import { ComingSoon } from "./components/ComingSoon"
 
 function getInitialLocale(): Locale {
@@ -45,11 +46,17 @@ export default function App() {
   const t = copy[locale]
 
   if (!showFullSite) {
-    return <ComingSoon locale={locale} onLocaleChange={setLocale} />
+    return (
+      <>
+        <Seo locale={locale} />
+        <ComingSoon locale={locale} onLocaleChange={setLocale} />
+      </>
+    )
   }
 
   return (
     <div id="top" className="min-h-svh">
+      <Seo locale={locale} />
       <Navbar copy={t.nav} locale={locale} onLocaleChange={setLocale} />
       <main>
         <Hero copy={t.hero} />

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://annaelia.com.cy/sitemap.xml
