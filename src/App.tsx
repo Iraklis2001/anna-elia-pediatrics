@@ -32,16 +32,12 @@ export default function App() {
     if (typeof window === "undefined") return "el"
     return getInitialLocale()
   })
-  const [showFullSite, setShowFullSite] = useState(false)
+  const showFullSite = shouldShowFullSite()
 
   useEffect(() => {
     localStorage.setItem("site-locale", locale)
     document.documentElement.lang = locale
   }, [locale])
-
-  useEffect(() => {
-    setShowFullSite(shouldShowFullSite())
-  }, [])
 
   const t = copy[locale]
 
