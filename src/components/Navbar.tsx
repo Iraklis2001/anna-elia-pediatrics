@@ -17,6 +17,7 @@ const links = [
   ...(siteConfig.showGallery
     ? [{ href: "#space", key: "space" as const }]
     : []),
+  { href: "#faq", key: "faq" as const },
   { href: "#contact", key: "contact" as const },
 ]
 

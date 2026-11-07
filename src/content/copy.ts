@@ -11,6 +11,7 @@ export const copy = {
       services: "Services",
       gesy: "GESY",
       space: "Our Space",
+      faq: "FAQ",
       contact: "Contact",
     },
     hero: {
@@ -92,6 +93,43 @@ export const copy = {
       subtitle:
         "A calm, welcoming environment for children and parents. Photos below are placeholders until clinic images are ready.",
     },
+    faq: {
+      title: "Frequently asked questions",
+      items: [
+        {
+          question: "How can I book an appointment?",
+          answer: "By phone. Visits are by appointment.",
+        },
+        {
+          question: "Do you accept GESY visits and private appointments?",
+          answer:
+            "The doctor is contracted with GESY. She also accepts private appointments.",
+        },
+        {
+          question: "How can I register my child on the doctor's GESY list?",
+          answer:
+            "You can register through the GESY Beneficiary Portal, or we can help you during your visit to the practice.",
+        },
+        {
+          question: "Up to what age does the doctor see children?",
+          answer: "From birth up to the age of 18.",
+        },
+        {
+          question: "What should I bring to the first visit?",
+          answer: "Your child's health booklet.",
+        },
+        {
+          question: "When should a newborn's first visit to the pediatrician take place?",
+          answer:
+            "Usually in the first few days after leaving the maternity hospital, depending on the newborn's needs.",
+        },
+        {
+          question: "Can my child be seen the same day if they are sick?",
+          answer:
+            "Call us and we will let you know if there is availability the same day.",
+        },
+      ],
+    },
     contact: {
       title: "Contact & Location",
       hoursTitle: "Operating Hours",
@@ -117,6 +155,7 @@ export const copy = {
       services: "Υπηρεσίες",
       gesy: "ΓεΣΥ",
       space: "Ο Χώρος μας",
+      faq: "Ερωτήσεις",
       contact: "Επικοινωνία",
     },
     hero: {
@@ -197,6 +236,45 @@ export const copy = {
       title: "Ο Χώρος μας",
       subtitle:
         "Ένα ήρεμο και φιλόξενο περιβάλλον για παιδιά και γονείς. Οι φωτογραφίες είναι προσωρινές μέχρι να προστεθούν οι πραγματικές.",
+    },
+    faq: {
+      title: "Συχνές ερωτήσεις",
+      items: [
+        {
+          question: "Πώς μπορώ να κλείσω ραντεβού;",
+          answer: "Τηλεφωνικώς. Οι επισκέψεις γίνονται με ραντεβού.",
+        },
+        {
+          question: "Δέχεστε επισκέψεις εντός ΓεΣΥ και ιδιωτικά ραντεβού;",
+          answer:
+            "Η ιατρός είναι συμβεβλημένη με το ΓεΣΥ. Δέχεται και ραντεβού ιδιωτικά.",
+        },
+        {
+          question:
+            "Πώς μπορώ να εγγράψω το παιδί μου στον κατάλογο της γιατρού στο ΓεΣΥ;",
+          answer:
+            "Η εγγραφή μπορεί να πραγματοποιηθεί μέσω της Πύλης Δικαιούχων του ΓεΣΥ ή με τη βοήθεια μας κατά την επίσκεψη σας στο ιατρείο.",
+        },
+        {
+          question: "Μέχρι ποιας ηλικίας παιδιά εξετάζει η γιατρός;",
+          answer: "Από τη γέννηση μέχρι και την ηλικία των 18 ετών.",
+        },
+        {
+          question: "Τι πρέπει να έχω μαζί μου στην πρώτη επίσκεψη;",
+          answer: "Το βιβλιάριο υγείας του παιδιού.",
+        },
+        {
+          question:
+            "Πότε πρέπει να γίνει η πρώτη επίσκεψη του νεογέννητου στην Παιδίατρο;",
+          answer:
+            "Συνήθως τις πρώτες μέρες μετά την έξοδο από το μαιευτήριο, ανάλογα με τις ανάγκες του νεογνού.",
+        },
+        {
+          question: "Μπορεί το παιδί μου να εξεταστεί την ίδια μέρα αν είναι άρρωστο;",
+          answer:
+            "Καλέστε μας και θα σας ενημερώσουμε αν υπάρχει διαθεσιμότητα την ίδια μέρα.",
+        },
+      ],
     },
     contact: {
       title: "Επικοινωνία & Τοποθεσία",

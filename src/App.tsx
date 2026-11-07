@@ -7,6 +7,7 @@ import { Bio } from "./components/Bio"
 import { Services } from "./components/Services"
 import { Gesy } from "./components/Gesy"
 import { Gallery } from "./components/Gallery"
+import { Faq } from "./components/Faq"
 import { Contact } from "./components/Contact"
 import { Footer } from "./components/Footer"
 import { ComingSoon } from "./components/ComingSoon"
@@ -58,6 +59,7 @@ export default function App() {
         {siteConfig.showGallery ? (
           <Gallery copy={t.gallery} locale={locale} />
         ) : null}
+        <Faq copy={t.faq} />
         <Contact copy={t.contact} locale={locale} />
       </main>
       <Footer copy={t.footer} locale={locale} />
