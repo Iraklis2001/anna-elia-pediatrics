@@ -64,6 +64,7 @@ export function buildStructuredData(locale: Locale) {
   ]
   const sameAs = [
     siteConfig.mapsGoogleUrl,
+    siteConfig.social.facebook,
     siteConfig.social.instagram,
     siteConfig.social.linkedin,
   ].filter((link) => link.startsWith("http"))

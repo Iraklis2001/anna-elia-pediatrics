@@ -15,7 +15,7 @@ export const copy = {
       contact: "Contact",
     },
     hero: {
-      eyebrow: "Pediatrician · Cyprus",
+      eyebrow: "Pediatrician · Kato Deftera",
       headline: "Modern paediatric care, centred on every child",
       bio: "Modern, personalised paediatric care with a focus on prevention, development and continuous monitoring of your child’s health — with scientific care, meaningful communication and a trusted relationship with every family.",
       cta: "Get in Touch",
@@ -164,7 +164,7 @@ export const copy = {
       contact: "Επικοινωνία",
     },
     hero: {
-      eyebrow: "Παιδίατρος · Κύπρος",
+      eyebrow: "Παιδίατρος · Κάτω Δευτερά",
       headline: "Σύγχρονη παιδιατρική φροντίδα, με επίκεντρο κάθε παιδί",
       bio: "Σύγχρονη και εξατομικευμένη παιδιατρική φροντίδα, με έμφαση στην πρόληψη, την ανάπτυξη και τη διαχρονική παρακολούθηση της υγείας του παιδιού. Με επιστημονική συνέπεια, ουσιαστική επικοινωνία και μια σχέση εμπιστοσύνης με κάθε οικογένεια.",
       cta: "Επικοινωνήστε",

@@ -81,8 +81,7 @@ export const siteConfig = {
     ],
   },
   social: {
-    // TODO: add Facebook URL when ready
-    facebook: "#",
+    facebook: "https://www.facebook.com/profile.php?id=61596194711986",
     instagram: "https://www.instagram.com/dr.annaelia",
     linkedin: "https://www.linkedin.com/in/anna-elia-5ba342427",
   },

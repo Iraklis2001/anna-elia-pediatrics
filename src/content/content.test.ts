@@ -56,6 +56,7 @@ describe("search details", () => {
       expect(clinic?.address?.postalCode).toBe("2450")
       expect(clinic?.telephone).toEqual([siteConfig.phone, siteConfig.mobile])
       expect(clinic?.hasMap).toBe("https://maps.app.goo.gl/i3QxTxBvAyg1WpuSA")
+      expect(clinic?.sameAs).toContain(siteConfig.social.facebook)
       expect(clinic?.sameAs?.every((link) => link.startsWith("http"))).toBe(true)
       expect(doctor?.worksFor).toEqual({ "@id": `${siteConfig.siteUrl}/#clinic` })
       expect(faq?.mainEntity).toHaveLength(copy[locale].faq.items.length)
