@@ -140,12 +140,13 @@ export function Navbar({ copy, locale, onLocaleChange }: NavbarProps) {
 }
 
 const badgeStyles = {
+  // Text colours are darkened so the small status text stays readable (WCAG AA contrast)
   open: {
-    text: "text-pastel-green-deep",
+    text: "text-[#5c7226]",
     dot: "bg-pastel-green-deep shadow-[0_0_0_3px_rgba(122,148,53,0.2)]",
   },
   soon: {
-    text: "text-[#a86a0c]",
+    text: "text-[#8a5a08]",
     dot: "bg-[#d9900f] shadow-[0_0_0_3px_rgba(217,144,15,0.22)]",
   },
   closed: {
