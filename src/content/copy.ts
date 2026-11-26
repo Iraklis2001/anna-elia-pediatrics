@@ -90,8 +90,11 @@ export const copy = {
     },
     gallery: {
       title: "Our Space",
-      subtitle:
-        "A calm, welcoming environment for children and parents. Photos below are placeholders until clinic images are ready.",
+      subtitle: "A calm, welcoming environment for children and parents.",
+      openPhoto: "Open photo",
+      close: "Close",
+      previous: "Previous photo",
+      next: "Next photo",
     },
     faq: {
       title: "Frequently asked questions",
@@ -239,8 +242,11 @@ export const copy = {
     },
     gallery: {
       title: "Ο Χώρος μας",
-      subtitle:
-        "Ένα ήρεμο και φιλόξενο περιβάλλον για παιδιά και γονείς. Οι φωτογραφίες είναι προσωρινές μέχρι να προστεθούν οι πραγματικές.",
+      subtitle: "Ένα ήρεμο και φιλόξενο περιβάλλον για παιδιά και γονείς.",
+      openPhoto: "Άνοιγμα φωτογραφίας",
+      close: "Κλείσιμο",
+      previous: "Προηγούμενη φωτογραφία",
+      next: "Επόμενη φωτογραφία",
     },
     faq: {
       title: "Συχνές ερωτήσεις",
