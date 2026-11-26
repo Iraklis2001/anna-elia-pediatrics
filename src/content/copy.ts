@@ -13,6 +13,11 @@ export const copy = {
       space: "Our Space",
       faq: "FAQ",
       contact: "Contact",
+      openNow: "Open now",
+      closedNow: "Closed now",
+      /** {m} is replaced with the number of minutes */
+      closesIn: "Closes in {m} min",
+      opensIn: "Opens in {m} min",
     },
     hero: {
       eyebrow: "Pediatrician · Kato Deftera",
@@ -90,8 +95,11 @@ export const copy = {
     },
     gallery: {
       title: "Our Space",
-      subtitle:
-        "A calm, welcoming environment for children and parents. Photos below are placeholders until clinic images are ready.",
+      subtitle: "A calm, welcoming environment for children and parents.",
+      openPhoto: "Open photo",
+      close: "Close",
+      previous: "Previous photo",
+      next: "Next photo",
     },
     faq: {
       title: "Frequently asked questions",
@@ -162,6 +170,10 @@ export const copy = {
       space: "Ο Χώρος μας",
       faq: "Ερωτήσεις",
       contact: "Επικοινωνία",
+      openNow: "Ανοιχτά τώρα",
+      closedNow: "Κλειστά τώρα",
+      closesIn: "Κλείνει σε {m}′",
+      opensIn: "Ανοίγει σε {m}′",
     },
     hero: {
       eyebrow: "Παιδίατρος · Κάτω Δευτερά",
@@ -239,8 +251,11 @@ export const copy = {
     },
     gallery: {
       title: "Ο Χώρος μας",
-      subtitle:
-        "Ένα ήρεμο και φιλόξενο περιβάλλον για παιδιά και γονείς. Οι φωτογραφίες είναι προσωρινές μέχρι να προστεθούν οι πραγματικές.",
+      subtitle: "Ένα ήρεμο και φιλόξενο περιβάλλον για παιδιά και γονείς.",
+      openPhoto: "Άνοιγμα φωτογραφίας",
+      close: "Κλείσιμο",
+      previous: "Προηγούμενη φωτογραφία",
+      next: "Επόμενη φωτογραφία",
     },
     faq: {
       title: "Συχνές ερωτήσεις",

@@ -12,8 +12,8 @@ export const siteConfig = {
   showFullSite: true,
   /** Public address. Used for the canonical link, sitemap, and search results. */
   siteUrl: "https://annaelia.com.cy",
-  /** Hide "Our Space" until real clinic photos are ready */
-  showGallery: false,
+  /** Show the "Our Space" photo collage */
+  showGallery: true,
   doctorName: {
     en: "Dr. Anna Elia, MD",
     el: "Δρ. Άννα Ηλία, MD",
@@ -86,22 +86,22 @@ export const siteConfig = {
     linkedin: "https://www.linkedin.com/in/anna-elia-5ba342427",
   },
   profileImage: "/images/doctor.jpg",
+  /** "Our Space" collage: the first photo is the large one. */
   gallery: [
     {
-      src: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=900&q=80",
-      alt: { en: "Bright clinic waiting area", el: "Φωτεινός χώρος αναμονής" },
+      src: "/images/space/waiting-room.jpg",
+      alt: { en: "Waiting area", el: "Αίθουσα αναμονής" },
+      position: "40% 50%",
     },
     {
-      src: "https://images.unsplash.com/photo-1631217868264-e5b90bb9e37b?auto=format&fit=crop&w=900&q=80",
-      alt: { en: "Calm consultation room", el: "Ήρεμο ιατρείο" },
+      src: "/images/space/play-corner.jpg",
+      alt: { en: "Play corner", el: "Γωνιά παιχνιδιού" },
+      position: "60% 62%",
     },
     {
-      src: "https://images.unsplash.com/photo-1666214280557-f1b5022eb634?auto=format&fit=crop&w=900&q=80",
-      alt: { en: "Welcoming reception desk", el: "Φιλική ρεσεψιόν" },
-    },
-    {
-      src: "https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=900&q=80",
-      alt: { en: "Soft, child-friendly interior", el: "Ζεστός, φιλικός χώρος για παιδιά" },
+      src: "/images/space/reception.jpg",
+      alt: { en: "Reception", el: "Υποδοχή" },
+      position: "50% 45%",
     },
   ],
 } as const

@@ -3,6 +3,7 @@ import { Menu, X } from "lucide-react"
 import type { Copy } from "../content/copy"
 import { siteConfig, type Locale } from "../content/siteConfig"
 import { LanguageToggle } from "./LanguageToggle"
+import { useClinicStatus, type ClinicStatus } from "../lib/openStatus"
 
 type NavbarProps = {
   copy: Copy["nav"]
@@ -24,6 +25,8 @@ const links = [
 export function Navbar({ copy, locale, onLocaleChange }: NavbarProps) {
   const [open, setOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
+  const status = useClinicStatus()
+  const badge = statusBadge(status, copy)
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 8)
@@ -66,8 +69,18 @@ export function Navbar({ copy, locale, onLocaleChange }: NavbarProps) {
             <span className="block text-sm font-semibold leading-tight text-ink sm:text-base">
               {siteConfig.doctorName[locale]}
             </span>
-            <span className="block text-xs text-ink-muted">
-              {siteConfig.title[locale]}
+            <span className="flex items-center gap-1.5 text-xs text-ink-muted">
+              {/* On small phones only the status fits under the name */}
+              <span className="hidden truncate min-[400px]:inline">{siteConfig.title[locale]}</span>
+              <span className="hidden min-[400px]:inline" aria-hidden>·</span>
+              {/* Live open/closed status from siteConfig.hours */}
+              <span
+                className={["inline-flex shrink-0 items-center gap-1 font-semibold", badge.text].join(" ")}
+                aria-live="polite"
+              >
+                <span className={["h-2 w-2 rounded-full", badge.dot].join(" ")} aria-hidden />
+                {badge.label}
+              </span>
             </span>
           </span>
         </a>
@@ -124,4 +137,33 @@ export function Navbar({ copy, locale, onLocaleChange }: NavbarProps) {
       )}
     </header>
   )
+}
+
+const badgeStyles = {
+  open: {
+    text: "text-pastel-green-deep",
+    dot: "bg-pastel-green-deep shadow-[0_0_0_3px_rgba(122,148,53,0.2)]",
+  },
+  soon: {
+    text: "text-[#a86a0c]",
+    dot: "bg-[#d9900f] shadow-[0_0_0_3px_rgba(217,144,15,0.22)]",
+  },
+  closed: {
+    text: "text-[#b4534b]",
+    dot: "bg-[#b4534b] shadow-[0_0_0_3px_rgba(180,83,75,0.18)]",
+  },
+}
+
+/** Text and colours for the status under the doctor's name. */
+function statusBadge(status: ClinicStatus, copy: Copy["nav"]) {
+  switch (status.state) {
+    case "open":
+      return { ...badgeStyles.open, label: copy.openNow }
+    case "closing":
+      return { ...badgeStyles.soon, label: copy.closesIn.replace("{m}", String(status.minutes)) }
+    case "opening":
+      return { ...badgeStyles.soon, label: copy.opensIn.replace("{m}", String(status.minutes)) }
+    default:
+      return { ...badgeStyles.closed, label: copy.closedNow }
+  }
 }

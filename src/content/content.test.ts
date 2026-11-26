@@ -87,3 +87,42 @@ describe("search details", () => {
     expect(sitemap).toContain("<loc>https://annaelia.com.cy/</loc>")
   })
 })
+
+describe("open now status", () => {
+  it("reads the opening hours text", async () => {
+    const { parseRanges } = await import("../lib/openStatus")
+    expect(parseRanges("09:00 – 13:00 · 15:00 – 18:00")).toEqual([
+      { start: 540, end: 780 },
+      { start: 900, end: 1080 },
+    ])
+    expect(parseRanges("Closed")).toEqual([])
+  })
+
+  it("is open on a weekday morning and closed at the weekend in Cyprus time", async () => {
+    const { isClinicOpen } = await import("../lib/openStatus")
+    // Tuesday 1 Dec 2026, 10:00 in Cyprus (UTC+2)
+    expect(isClinicOpen(new Date("2026-12-01T08:00:00Z"))).toBe(true)
+    // Tuesday 14:00 in Cyprus, during the lunch break
+    expect(isClinicOpen(new Date("2026-12-01T12:00:00Z"))).toBe(false)
+    // Thursday 16:00 in Cyprus, afternoons closed
+    expect(isClinicOpen(new Date("2026-12-03T14:00:00Z"))).toBe(false)
+    // Saturday 10:00 in Cyprus
+    expect(isClinicOpen(new Date("2026-12-05T08:00:00Z"))).toBe(false)
+  })
+})
+
+describe("opening and closing soon", () => {
+  it("warns in the last 30 minutes before closing and opening", async () => {
+    const { clinicStatus } = await import("../lib/openStatus")
+    // Tuesday 1 Dec 2026, Cyprus is UTC+2
+    expect(clinicStatus(new Date("2026-12-01T06:40:00Z"))).toEqual({ state: "opening", minutes: 20 })
+    expect(clinicStatus(new Date("2026-12-01T06:20:00Z"))).toEqual({ state: "closed" })
+    expect(clinicStatus(new Date("2026-12-01T10:45:00Z"))).toEqual({ state: "closing", minutes: 15 })
+    expect(clinicStatus(new Date("2026-12-01T10:15:00Z"))).toEqual({ state: "open" })
+    // Lunch break: 14:40 in Cyprus, afternoon opens at 15:00
+    expect(clinicStatus(new Date("2026-12-01T12:40:00Z"))).toEqual({ state: "opening", minutes: 20 })
+    // Thursday 12:50 in Cyprus closes at 13:00 and does not reopen
+    expect(clinicStatus(new Date("2026-12-03T10:50:00Z"))).toEqual({ state: "closing", minutes: 10 })
+    expect(clinicStatus(new Date("2026-12-03T12:40:00Z"))).toEqual({ state: "closed" })
+  })
+})
