@@ -13,6 +13,11 @@ export const copy = {
       space: "Our Space",
       faq: "FAQ",
       contact: "Contact",
+      openNow: "Open now",
+      closedNow: "Closed now",
+      /** {m} is replaced with the number of minutes */
+      closesIn: "Closes in {m} min",
+      opensIn: "Opens in {m} min",
     },
     hero: {
       eyebrow: "Pediatrician · Kato Deftera",
@@ -165,6 +170,10 @@ export const copy = {
       space: "Ο Χώρος μας",
       faq: "Ερωτήσεις",
       contact: "Επικοινωνία",
+      openNow: "Ανοιχτά τώρα",
+      closedNow: "Κλειστά τώρα",
+      closesIn: "Κλείνει σε {m}′",
+      opensIn: "Ανοίγει σε {m}′",
     },
     hero: {
       eyebrow: "Παιδίατρος · Κάτω Δευτερά",
